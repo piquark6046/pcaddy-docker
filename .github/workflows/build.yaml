@@ -3,6 +3,7 @@ name: Publish to GHCR.io
 on:
   schedule:
     - cron: '0 0 1,15,30 * *'
+  workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
