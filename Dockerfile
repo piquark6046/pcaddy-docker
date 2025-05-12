@@ -8,9 +8,7 @@ RUN xcaddy build \
     --with github.com/hslatman/caddy-crowdsec-bouncer/http \
     --with github.com/hslatman/caddy-crowdsec-bouncer/appsec \
     --with github.com/hslatman/caddy-crowdsec-bouncer/layer4 \
-    --with github.com/caddy-dns/digitalocean=github.com/xNok/caddy-dns-digitalocean@master \
-    --with github.com/libdns/digitalocean=github.com/xNok/libdns-digitalocean@master
-
+    --with github.com/caddy-dns/cloudflare
 FROM caddy:${CADDY_VERSION} AS caddy
 
 WORKDIR /
